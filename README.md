@@ -53,10 +53,10 @@ https://www.snapchat.com/add/502.txt
 
 #Thanks
 
-  # the framework based on https://github.com/aboul3la/Sublist3r
-  # the framework based on https://github.com/laramies/theHarvester
+  ### use this tools as a module https://github.com/aboul3la/Sublist3r
+  ### use this tools as a module https://github.com/laramies/theHarvester
 
-  
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
