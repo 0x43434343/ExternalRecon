@@ -84,17 +84,24 @@ ____      _                        _ ____
 		print("""
 
 
-			set -> to assign 
+		set -> to assign 
 			
-			use -> to use a module
+		use -> to use a module
 		
-			run -> to run and execute the module
+		run -> to run and execute the module
 
-			show modules -> to display the current modules 
+		show modules -> to display the current modules 
 
-			? -> help command
+		? -> help command
 
-			help -> help command
+		help -> help command
+
+		$Example; 
+		set target sony.com
+		use module search_extension
+		show options
+		run
+		
 			""")
 
 	def show_modules(self):
