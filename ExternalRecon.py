@@ -12,7 +12,7 @@ started in jun 12, 2018 at 6:28 PM
 
 import sys
 if sys.version_info[0] < 3:
-    sys.stdout.write("this script required a Python3\n")
+    sys.stdout.write("this script requires a python version 3.0 and above\n")
     sys.stdout.write("python3 ExternalRecon.py\n")
     sys.exit(0)
 
