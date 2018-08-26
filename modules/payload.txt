@@ -1,0 +1,3 @@
+syntax error has occurred
+Warning: mysql_connect()
+Warning: mysql_query()
