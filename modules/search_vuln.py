@@ -25,10 +25,10 @@ def search_vuln(domain="",payload=""):
 		for getAll in f:
 			getAll = getAll.rstrip()
 			time.sleep(3)
-			GoogleSearch(domain,"intext:"+ext[getAll],1)
+			GoogleSearch(domain,"intext:"+ext[getAll])
 	else:
 		for getAll in range(len(ext)):	
-			GoogleSearch(domain,"intext:"+ext[getAll],1)
+			GoogleSearch(domain,"intext:"+ext[getAll])
 			#to avoid block lol
 			time.sleep(3)
 

@@ -150,7 +150,7 @@ ____      _                        _ ____
 
 	def autocompleter(self,text,status):
 
-		names = ["module","set","show","options","show options","target","payload"]
+		names = ["module","set","show","options","show options","target","payload","use"]
 		names +=  self.addModules()
 	
 		options = [x for x in names if x.startswith(text)]
@@ -166,7 +166,6 @@ ____      _                        _ ____
 
 		if 'libedit' in readline.__doc__:
 			readline.parse_and_bind("bind ^I rl_complete")
-			readline.parse_and_bind('set editing-mode vi')
 
 		else:
 			readline.parse_and_bind("tab: complete")
@@ -220,9 +219,14 @@ ____      _                        _ ____
 		"""
 		will check the command during the loop inside the modules
 		"""
-
-		if "exit" in self.console or "background" or "back" in self.console:
+		if "exit" in self.console:
 			return True
+		elif "back" in self.console:
+			return True
+		elif "background" in self.console:
+			return True
+		else:
+			return False
 
 
 	def displayCurrent(self,module):
@@ -232,18 +236,16 @@ ____      _                        _ ____
 
 		#self.createACommand()
 		self.createInput()
-		while self.console != "exit" or self.console[0] !="exit":
+
+		print("self.console ->" +str(self.console))
+		while str(self.console) != "exit":
 
 			print("\033[92m#er>:(/modules/{0})>".format(self.module))
 			if "run" in self.console:
 
 				self.checkModule(self.target)
 
-
-			if self.checkCommand() == True:
-				break
-
-			if "enum_domain_users" == self.module:
+			elif "enum_domain_users" == self.module:
 				if "username" in self.console:
 
 					self.username = self.console[2]
@@ -258,13 +260,15 @@ ____      _                        _ ____
 				print("domain: " + self.domain)
 				print("password: " + self.password)
 
-
+			elif self.checkCommand() == True:
+				break
 			#to let the user check his/her status 
-
-			if "show" in self.console:
+			elif "show" in self.console:
 
 				self.displayOptions()
 
+			self.createInput()
+	
 	def displayModules():
 		"""	
 		this function to display modules
@@ -293,6 +297,7 @@ ____      _                        _ ____
 		while self.console != "exit":
 
 			self.createInput()
+
 			if 'exit' in self.console:
 				break
 
