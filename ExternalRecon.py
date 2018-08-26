@@ -236,8 +236,6 @@ ____      _                        _ ____
 
 		#self.createACommand()
 		self.createInput()
-
-		print("self.console ->" +str(self.console))
 		while str(self.console) != "exit":
 
 			print("\033[92m#er>:(/modules/{0})>".format(self.module))
