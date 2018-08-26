@@ -18,7 +18,7 @@ def prepareGoogle(search_term, number_results=100, language_code='en'):
             response.raise_for_status()
 
         except:
-            print("Google Blocking our requests")
+            print("Google Blocking our reques")
         # Parsing
         soup = BeautifulSoup(response.text, 'html.parser')
         found_results = []
