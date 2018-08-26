@@ -51,12 +51,12 @@ https://www.snapchat.com/add/502.txt
 
 ```
 
-## Authors
+#Thanks
 
-* **Fahad Alharbi** - *Initial work* - [0xFahad Alharbi](https://github.com/faa5431)
+  # the framework based on https://github.com/aboul3la/Sublist3r
+  # the framework based on https://github.com/laramies/theHarvester
 
-See also the list of [contributors](https://github.com/faa5431/External1/contributors) who participated in this project.
-
+  
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
