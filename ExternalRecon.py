@@ -96,12 +96,12 @@ ____      _                        _ ____
 
 		help -> help command
 
-		$Example; 
+		#Example; 
 		set target sony.com
 		use module search_extension
 		show options
 		run
-		
+
 			""")
 
 	def show_modules(self):
@@ -236,8 +236,6 @@ ____      _                        _ ____
 			if "run" in self.console:
 
 				self.checkModule(self.target)
-
-
 
 
 			if self.checkCommand() == True:
