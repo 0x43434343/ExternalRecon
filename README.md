@@ -53,8 +53,8 @@ https://www.snapchat.com/add/502.txt
 
 #Thanks
 
-  ### use this tools as a module https://github.com/aboul3la/Sublist3r
-  ### use this tools as a module https://github.com/laramies/theHarvester
+  ### use this tool as a module https://github.com/aboul3la/Sublist3r
+  ### use this tool as a module https://github.com/laramies/theHarvester
 
 
 ## License
