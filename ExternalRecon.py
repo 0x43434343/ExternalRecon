@@ -140,10 +140,10 @@ ____      _                        _ ____
 		modules = [
 			'search_vuln',
 			'search_subdomain',
-			'search_extension',
 			'search_public',
 			'search_emails',
-			'enum_domain_users'
+			'enum_domain_users',
+			'search_config_extension'
 			]
 
 		return modules
@@ -166,6 +166,8 @@ ____      _                        _ ____
 
 		if 'libedit' in readline.__doc__:
 			readline.parse_and_bind("bind ^I rl_complete")
+			readline.parse_and_bind('set editing-mode vi')
+
 		else:
 			readline.parse_and_bind("tab: complete")
 
@@ -219,7 +221,7 @@ ____      _                        _ ____
 		will check the command during the loop inside the modules
 		"""
 
-		if "exit" in self.console or "background" in self.console:
+		if "exit" in self.console or "background" or "back" in self.console:
 			return True
 
 
@@ -263,7 +265,6 @@ ____      _                        _ ____
 
 				self.displayOptions()
 
-			self.createInput()
 	def displayModules():
 		"""	
 		this function to display modules

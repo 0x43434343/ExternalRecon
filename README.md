@@ -29,26 +29,24 @@ sudo pip3 install fake_useragent
 #example
 
 ```
-#er>: set target sony.com
+#er>: set target snapchat.com
+#er>: use module search_config_extension
+#er>:(/modules/search_config_extension)>
 #er>: show options
+#er>:(/modules/search_config_extension)>
 ##################################
-target: sony.com
-module: 
+target: snapchat.com
+module: search_config_extension
 payload: 
 ##################################
-#er>: 
-
-#er>: use module search_extension
-#er>:(/modules/search_extension)>
-#er>: 
-
-#er>: show options
-#er>:(/modules/search_extension)>
-##################################
-target: sony.com
-module: search_extension
-payload: 
-##################################
+#er>: run
+#er>:(/modules/search_config_extension)>
+start searching for All Config Extensions
+https://support.snapchat.com/humans.txt
+https://www.snapchat.com/add/502.txt
+https://www.snapchat.com/add/ino.ora
+https://support.snapchat.com/humans.txt
+https://www.snapchat.com/add/502.txt
 
 
 ```
